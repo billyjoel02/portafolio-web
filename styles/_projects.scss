@@ -1,0 +1,32 @@
+.projets {
+    min-height: 90vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .info-project {
+        height: 45vh;
+        width: 38vh;
+        background: white;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: 3px solid rgba(196, 196, 196, 0.15);
+        img {
+            width: 50%;
+            margin: auto;
+            height: 20vh;
+        }
+        h1 {
+            color:#000;
+            margin: 2rem 0rem;
+        }
+        p {
+            padding: 2rem;
+        }
+    }
+}
