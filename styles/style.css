@@ -52,7 +52,13 @@ a {
   color: white;
   text-decoration: none;
 }
+.a-black {
+  text-align: center;
+}
+.a-black a{
+  color: rgb(92, 39, 216);
 
+}
 .nav-container {
   background-color: #070707;
   position: -webkit-sticky;
