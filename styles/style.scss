@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+.nav-active {
+    transition: transform 0.5s ease-in;
+    transform: translateX(0%);
+    transform: translate(0%,0%);
+}
+
 html {
     font-size: 62.5%;
 }
@@ -79,23 +85,44 @@ nav {
 @import "tecnologhys";
 @import "experince";
 
-@media screen and(max-width:1200px) {
+@media screen and(max-width:768px) {
     html {
         font-size: 50%;
     }
     h1 {
         font-size: 2.4rem !important;
     }
-    .nav-links {
-        display: none;
+    body {
+        overflow-x: hidden;
     }
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 93vh;
+        width: 50%;
+        top: 7vh;
+        background-color: #070707;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; 
+        transition: transform 0.5s ease-in;
+        transform: translateX(100%);
+    }  
     .icon-nav {
         display: block !important; 
     }
-}
-@media (min-width: 768px) and (max-width: 1024px) { 
     .projets {
-        width: 85%;
+        width: 80%;
+        margin: auto;
+        height: auto;
+        padding: 5rem;
+        top: 8vh;
+    }
+}
+@media screen and (max-width: 1024px) { 
+    .projets {
+        width: 100%;
         margin: auto;
         height: auto;
     }
